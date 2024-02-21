@@ -1,6 +1,6 @@
 *{
-    /* border: 1px solid blueviolet;
-} */
+    flex-wrap: wrap;
+}
 body{
     flex-wrap: wrap;
 }
@@ -47,9 +47,10 @@ body{
     margin: 0;
     
 }
-.page_text .text1{
+/* .page_text .text1{
     /* width: 800px; */
-}
+    
+
 .page_text{
     display: flex;
     flex-wrap: wrap;
@@ -64,4 +65,4 @@ body{
      margin: 0;
      padding: 0 0;
    }
-  
+}
