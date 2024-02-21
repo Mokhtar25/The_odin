@@ -267,3 +267,21 @@ h1{
     margin: 0 0;
     
 }
+
+.info_header{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.click{
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+.myblog{
+    padding: 0;
+    margin: 0;
+}
