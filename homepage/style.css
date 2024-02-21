@@ -1,0 +1,256 @@
+
+body{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     margin: 0;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     
+       
+}
+.header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    flex-shrink: 0;
+}
+
+.main{
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+    gap: 5px;
+    min-height: 350px;
+}
+
+.main_text, .imgs{
+    width: 450px;
+    height: 220px; 
+}
+
+
+.main_text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    
+    flex-grow: 0;
+    gap: 5px;
+}
+.button{
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    margin-top: 5px;
+    width: 110px;
+    height: 60px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.img{
+    width: 400px;
+    height: 200px;
+
+
+} 
+
+ .imgs{
+
+    margin-left: 70px;
+} 
+.this{
+    font-size: 50px;
+    font-weight: bold;
+    flex-grow: 0;
+}
+.logo{
+    font-size: larger;
+    font-weight: bold;
+}
+.header, .footer{
+    background-color: #1F2937;
+    color: white;
+    max-height: 40px;
+    display: flex;
+
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    color: rgb(220, 220, 220);
+
+}
+
+.header, .quote, .main, .lower{
+    flex-grow: 1;
+}
+.quote{
+    font-family:"light italic", system-ui, -apple-system;
+    font-size: 36px;
+    color: #1F2937;
+    background-color: #E5E7EB;
+}
+.footer{
+    margin-top: auto;
+   
+}
+.lower{
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+.cards{
+    display: flex;
+    gap: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 140px;
+    
+    
+
+}
+.card_pic{
+    border: 3px solid #3882F6;
+    border-radius: 0.4rem;
+    width: 130px;
+    height: 140;
+    display: flex;
+    flex-wrap: wrap;
+
+    }
+img{
+    border-radius: 0.1rem;
+    object-fit: cover;
+
+}
+.card_text{
+    min-height: 100px;    
+    flex-wrap: wrap;
+    flex-basis: auto;
+    text-align: center;
+    
+}
+.info_header{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937 ;
+    margin-bottom: 30px;
+
+
+}
+
+.quote_con{
+    min-height: 350px;
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quote{
+    padding: 50px 80px;
+    width:1000px;
+    height:100px;
+    margin-top: 80px;
+    padding-top: 30px;
+}
+.source{
+    height: 100px;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    margin-left: 600px;
+}
+.action{
+    display: flex;
+    height: 300px ;
+    justify-content:center ;
+    align-items: center;
+
+}
+.action_middle{
+    display: flex;
+    height: 150px;
+    width: 900px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0.6rem;
+    background-color: #3882F6;
+    color: white;
+
+}
+.action_header{
+    font-size: 24px;
+    font-weight: 700;
+}
+button{
+	border: 2px solid white;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882F6;
+    margin-top: 5px;
+    width: 130px;
+    height: 35px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+button:active{
+    background-color: aliceblue;
+    transition: background-color 0.15s ease-in-out
+
+}
+.button:active{
+    background-color: aliceblue;
+    transition: background-color 0.15s ease-in-out
+}
+.button:hover{
+    cursor: pointer;
+}
+
+.card_pic:hover{
+    cursor: pointer;
+}
+.card_pic:active{
+    border: 6px solid lightblue;
+    transition: border 0.45 ease-in-out
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+li:active{
+    font-weight: 600;
+
+}
+li:hover{
+    cursor: pointer;
+}
