@@ -8,6 +8,9 @@ body{
      
        
 }
+html {
+    scroll-behavior: smooth;
+   }
 .header{
     justify-content: space-between;
     align-items: center;
@@ -35,9 +38,8 @@ body{
     display: flex;
     flex-direction: column;
     margin-left: 45px;
+    gap: 10px;
     
-    flex-grow: 0;
-    gap: 5px;
 }
 .button{
     border-radius: 8px;
@@ -65,10 +67,9 @@ body{
     margin-left: 70px;
 } 
 .this{
-    font-size: 50px;
-    font-weight: bold;
-    flex-grow: 0;
+ 
 }
+
 .logo{
     font-size: larger;
     font-weight: bold;
@@ -253,4 +254,16 @@ li:active{
 }
 li:hover{
     cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    flex-grow: 0;
+    padding: 0 0;
+    margin: 0 0;
+    
 }
