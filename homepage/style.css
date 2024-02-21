@@ -13,18 +13,37 @@ html {
     scroll-behavior: smooth;
    }
 .header{
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 10px 150px;
-    flex-shrink: 0;
+    padding: 30px;
 }
 
+.nav {
+    background-color: #1F2937;
+    flex-wrap:wrap;
+    flex-shrink: 1;
 
+}
+
+.btn-outline-primary{
+    color: white;
+    background-color: #3882F6;
+    flex-shrink: 1;
+}
+#search_b{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    border: 1px solid rebeccapurple;
+    flex-shrink: 1;
+}
 .main{
     background-color: #1F2937;
     display: flex;
     justify-content: center;
     align-items: center;
+    
     color: #E5E7EB;
     gap: 5px;
     min-height: 350px;
@@ -86,7 +105,9 @@ ul{
     list-style-type: none;
     display: flex;
     gap: 15px;
+    flex-shrink: 1;
     color: rgb(220, 220, 220);
+    padding-top: 15px;
 
 }
 
@@ -106,12 +127,12 @@ ul{
 .lower{
     display: flex;
     flex-direction: column;
+    
 }
 .info{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 450px;
     justify-content: center;
     align-items: center;
     gap: 15px;
@@ -120,6 +141,7 @@ ul{
 .cards{
     display: flex;
     gap: 50px;
+    padding-bottom: 80px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -164,50 +186,40 @@ img{
 }
 
 .quote_con{
-    min-height: 350px;
     background-color: #E5E7EB;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .quote{
-    padding: 50px 80px;
-    width:1000px;
-    height:100px;
-    margin-top: 80px;
-    padding-top: 30px;
+    
+    display: flex;
+    width: 70%;
+    height: 50%;
+    padding: 60px 0;
+    padding-top: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+   
 }
 .source{
-    height: 100px;
     font-size: 28px;
     font-weight: bold;
     display: flex;
-    margin-left: 600px;
+    margin-left: auto;
+    flex-wrap: wrap;
 }
-.action{
-    display: flex;
-    height: 300px ;
-    justify-content:center ;
-    align-items: center;
 
-}
-.action_middle{
-    display: flex;
-    height: 150px;
-    width: 900px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 0.6rem;
-    background-color: #3882F6;
-    color: white;
 
-}
-.action_header{
-    font-size: 24px;
-    font-weight: 700;
-}
-button{
+
+
+.main button{
 	border: 2px solid white;
 	padding: 0;
 	font: inherit;
@@ -262,6 +274,7 @@ li:hover{
 a{
     text-decoration: none;
     color: white;
+    flex-shrink: 1;
 }
 h1{
     font-size: 50px;
@@ -289,3 +302,80 @@ h1{
     padding: 0;
     margin: 0;
 }
+
+.dropdown{
+    border-radius: 15rem;
+    display: flex;
+    
+}
+.dropbtn {
+    background-color:#1F2937;
+    display: flex;
+    border: 2px solid #E5E7EB;
+    color: white;
+    /* height: 50px;
+    width: 270px; */
+    outline: #3882F6;
+    flex-shrink: 1;
+    border-radius: 15rem;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(51, 61, 75);
+  }
+  
+  /* The search field */
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 15rem;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* The search field when it gets focus/clicked on */
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    border-radius: 15rem;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 1rem;
+    background-color: #f6f6f6;
+    width: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    border-radius: 15rem;
+    text-decoration: none;
+    display: block;
+    flex-shrink: 1;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+ 
