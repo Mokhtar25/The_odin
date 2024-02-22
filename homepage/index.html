@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +12,7 @@
     <div class="header">
         <div class="logo">STK logo</div>
         <div class="dropdown" onclick="show()">
-            <input placeholder="   Search" type="text" onclick="myFunction()" class="dropbtn"></input>
+            <input placeholder="   Search" type="text" onclick="myFunction()" class="dropbtn">
             <div id="myDropdown" class="dropdown-content">
               <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
               <a href="pages/python.html">Python</a>
@@ -94,34 +95,34 @@
 
     </div>
     <script>
-        function hide(){
-          let item =  document.getElementById("myDropdown")
-          item.style.display = "none";
-        }
-        function show(){
-          let item =  document.getElementById("myDropdown")
-          item.style.display = "";
+                function hide(){
+                let item =  document.getElementById("myDropdown")
+                item.style.display = "none";
+                }
+                function show(){
+                let item =  document.getElementById("myDropdown")
+                item.style.display = "";
+                }
+
+                function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
         }
 
-        function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function filterFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("a");
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-  }
-}
+        function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+            } else {
+            a[i].style.display = "none";
+            }
+        }
+        }
     </script>
 </body>
 </html>

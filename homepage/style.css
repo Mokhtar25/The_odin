@@ -255,7 +255,7 @@ button:active{
 }
 .card_pic:active{
     border: 6px solid lightblue;
-    transition: border 0.45 ease-in-out
+    transition: border 0.1s ease-in-out
 
 }
 .footer{
