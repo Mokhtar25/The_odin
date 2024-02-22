@@ -151,15 +151,15 @@ ul{
     display: flex;
     flex-direction: column-reverse;
     width: 140px;
-    
-    
+    border: 2px solid white;
+
 
 }
 .card_pic{
-    border: 3px solid #3882F6;
     border-radius: 0.4rem;
-    width: 130px;
-    height: 140;
+    width: auto;
+    height: auto;
+    border: 3px solid #3882F6;
     display: flex;
     flex-wrap: wrap;
 
@@ -167,12 +167,12 @@ ul{
 img{
     border-radius: 0.1rem;
     object-fit: cover;
-
 }
 .card_text{
     min-height: 100px;    
     flex-wrap: wrap;
     flex-basis: auto;
+    
     text-align: center;
     
 }
