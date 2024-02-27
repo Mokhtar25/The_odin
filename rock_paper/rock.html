@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let answer;
+    while (true){
+     answer = prompt("Choose (rock, paper, scissors): ").toLowerCase();
+    if (["rock", "paper", "scissors"].includes(answer)){
+        break;
+    }
+    alert("Please Chose a correct item");
+    }
+    switch (answer){
+        case "rock":
+            answer = 0;
+            break;
+        case "paper":
+            answer = 1;
+            break;
+        default:
+            answer = 2;
+
+    }
+    let guess = Math.floor(Math.random() * 3);
+    console.log(winner(answer, guess))
+
+    function winner(answer, guess){
+        array = [[0, 0, 1], [1, 0, 0], [0, 1, 0]];
+        items = ["rock", "paper", "scissors"]
+        if (array[answer][guess] > array[guess][answer]){
+            return "You win!!";
+        }
+        else if (array[answer][guess] === array[guess][answer]){
+            return "Draw!!"
+        }
+        else{
+            return `You lost!, ${items[guess]} beats ${items[answer]}`
+        }
+    }
+</script>
+</html>
