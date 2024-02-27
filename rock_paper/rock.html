@@ -9,27 +9,31 @@
     
 </body>
 <script>
-    let answer;
-    while (true){
-     answer = prompt("Choose (rock, paper, scissors): ").toLowerCase();
-    if (["rock", "paper", "scissors"].includes(answer)){
-        break;
-    }
-    alert("Please Chose a correct item");
-    }
-    switch (answer){
-        case "rock":
-            answer = 0;
+    function play()
+    {
+        let answer;
+        while (true){
+        answer = prompt("Choose (rock, paper, scissors): ").toLowerCase();
+        if (["rock", "paper", "scissors"].includes(answer)){
             break;
-        case "paper":
-            answer = 1;
-            break;
-        default:
-            answer = 2;
+        }
+        alert("Please Chose a correct item");
+        }
+        switch (answer){
+            case "rock":
+                answer = 0;
+                break;
+            case "paper":
+                answer = 1;
+                break;
+            default:
+                answer = 2;
 
+        }
+        let guess = Math.floor(Math.random() * 3);
+        console.log(winner(answer, guess))
+        i++;
     }
-    let guess = Math.floor(Math.random() * 3);
-    console.log(winner(answer, guess))
 
     function winner(answer, guess){
         array = [[0, 0, 1], [1, 0, 0], [0, 1, 0]];
@@ -44,5 +48,11 @@
             return `You lost!, ${items[guess]} beats ${items[answer]}`
         }
     }
+    let i = 0;
+    while (i < 5)
+    {
+        play();       
+    }
+
 </script>
 </html>
